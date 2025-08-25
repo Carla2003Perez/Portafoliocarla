@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/cartapa.css';
+import './css/styles.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
