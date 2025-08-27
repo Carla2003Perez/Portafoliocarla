@@ -1,0 +1,70 @@
+/* Navbar general */
+.navbar {
+  background-color: #343a40;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+/* Contenedor flex */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Marca */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Dropdown */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background: #343a40;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  background-color: #495057;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none; /* oculto por defecto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #343a40;
+  border: 1px solid #555;
+  min-width: 220px;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  display: block; /* visible cuando está abierto */
+}
+
+.dropdown-menu li button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-menu li button:hover {
+  background-color: #495057;
+}

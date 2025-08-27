@@ -1,12 +1,53 @@
-
-.material-symbols-outlined {
-    
-    left: 20px;  
-    color: white;
-    position: absolute;
-    top: 2%;
-    width: 100px;
-    border-radius: 50%;
-  
-  
+/* Navbar estilizado */
+.custom-navbar {
+  background: linear-gradient(90deg, #0d1117, #1f2937);
+  padding: 0.8rem 2rem; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
+/* Contenedor del enlace de retroceso */
+.back-link {
+  margin-left: 10px;   /* espacio con el borde izquierdo */
+}
+
+/* Estilo del enlace */
+.back-link a {
+  color: #f0f0f0;
+  font-size: 1.6rem;  
+  padding: 4px 6px;   /* espacio interno para que no se vea pegado */
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Hover bonito */
+.back-link a:hover {
+  color: #00d8ff;
+  background-color: rgba(255,255,255,0.1);
+  transform: scale(1.15);
+}
+
+.navbar {
+  background-color: #343a40;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  padding-top: 70px; /* altura de la navbar fija */
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
