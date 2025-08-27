@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Inicio from './components/inicio';
 import Habilidad from './components/Habilidad';
 import Trabajos from './components/trabajos';
-import Primer from './components/Trabajos/primer'; 
+import Primer from './components/Trabajos/Tarea1/Owasp'; 
 import './App.css'
 
 function App() {

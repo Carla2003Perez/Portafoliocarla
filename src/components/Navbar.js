@@ -10,8 +10,6 @@ function Navbar() {
     <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top px-4">
       <a className="navbar-brand fw-bold" href="#inicio">Mi Portafolio</a>
 
-     
-
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav gap-3">
           <li className="nav-item">
