@@ -3,9 +3,17 @@
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
+    
 }
 .trabajos h2{
     text-align: center;
+   font-family: cursive;
+}
+
+.trabajos{
+background-image: url("../image/flores1.jpg");
+    background-size:cover;
+    
 }
 
 .col {

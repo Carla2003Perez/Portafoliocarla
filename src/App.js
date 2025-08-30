@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 import Inicio from './components/inicio';
 import Habilidad from './components/Habilidad';
 import Trabajos from './components/trabajos';
-import Primer from './components/Trabajos/Tarea1/Owasp'; 
+import Primer from './components/Trabajos/Tarea1/parte1/Owasp';
+import Segundo from './components/Trabajos/Tarea2/Prueba';  
 import './App.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           </>
         } />
         <Route path="/primer" element={<Primer />} />
+        <Route path="/segundo" element={<Segundo />} />
       </Routes>
     </Router>
   );

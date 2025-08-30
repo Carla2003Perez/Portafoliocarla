@@ -1,19 +1,19 @@
 import React from 'react';
 import './css/inicio.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import carla from "./image/carla.jpg"
 
 function Inicio() {
     return(
         <div>
           
     
-      <section id="servicios" className="bg-light py-5">
+      <section id="servicios" className="servicios">
         <div className="container">
           <h2 className="mb-4">Datos Personales</h2>
           <div className="row">
             <div className="col-md-4 text-center">
-              <img src="Image/unnamed.jpg" alt="Foto perfil" className="img-fluid rounded mb-3" />
+              <img src={carla}alt="Foto perfil" className="img-fluid rounded mb-3" />
             </div>
             <div className="col-md-4">
               <h5>Información Personal</h5>

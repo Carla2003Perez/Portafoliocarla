@@ -2,14 +2,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './owasp.css';
 import { Link} from 'react-router-dom'; 
-import Navowasp from "./navowasp";
+import Navowasp from "../navowasp";
+import Plan from "../parte2/planpruebas";
+
 
 function Owasp() {
   return (
   
   <div className="owasp-container">
    <section className="bg-light py-5">
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top px-7">
+    <nav className="navbar-no  fixed-top px-7">
       
         <p className="back-link"> 
           <Link to="/"><i class="bi bi-arrow-left"></i></Link>
@@ -20,15 +22,16 @@ function Owasp() {
       <div className="container">
         <h1>OWASP TOP 10 DE RIESGOS DE SEGURIDAD</h1>
       </div>
-       <Navowasp />
-    </section> 
-    
-  
-    
+
+    </section>
+      
+    <Navowasp />
+     
+
 
       {/* 1 */}
-      <section  className="container py-5">
-        <h2  id="Acceso">1. Accesos de control rotos</h2>
+      <section id="Acceso" className="container py-5">
+        <h2  >1. Accesos de control rotos</h2>
         <h3>¿Qué es?</h3>
         <p>
           El control de acceso constituye un mecanismo fundamental para garantizar que los usuarios operen dentro
@@ -56,7 +59,7 @@ function Owasp() {
       </section>
 
       {/* 2 */}
-      <section id="Criptografia">
+      <section id="Criptografia" className="container py-5">
         <h2>2. Fallas criptográficas</h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -85,7 +88,7 @@ function Owasp() {
       </section>
 
       {/* 3 */}
-      <section id="Inyeccion">
+      <section id="Inyeccion" className="container py-5">
         <h2>3. Ataques de inyección</h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -107,7 +110,7 @@ function Owasp() {
         </ul>
       </section>
 
-      <section id="Diseño">
+      <section id="Diseño" className="container py-5">
         <h2>4. Diseño inseguro</h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -135,7 +138,7 @@ function Owasp() {
         </ul>
       </section>
 
-      <section id="Configuracion">
+      <section id="Configuracion" className="container py-5">
         
         <h2>5. Congirucación incorrecta de seguridad</h2>
         <h3>¿Qué es?</h3>
@@ -173,7 +176,7 @@ function Owasp() {
         </ul>
       </section>
 
-      <section id="Vulnerables">
+      <section id="Vulnerables" className="container py-5">
         <h2>6. Componentes vulnerables y obsoletos</h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -196,7 +199,7 @@ function Owasp() {
         </ul>
       </section>
 
-      <section id="Identificacion">
+      <section id="Identificacion" className="container py-5">
         <h2>7. Fallas de identificación y Autenticación </h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -218,7 +221,7 @@ function Owasp() {
         </ul>
       </section>
 
-      <section id="Integridad">
+      <section id="Integridad" className="container py-5">
         <h2>8. Fallas de integridad de datos y software</h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -246,7 +249,7 @@ function Owasp() {
         </ul>
       </section>
 
-      <section id="Monitoreo">
+      <section id="Monitoreo" className="container py-5">
         <h2>9. Fallas de monitoreo y registro de seguridad </h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -264,13 +267,13 @@ function Owasp() {
             que los datos de los registros estén correctamente codificados para prevenir posibles inyecciones o ataques dirigidos al sistema de monitoreo.
           </li>
           <li>
-           •	Para transacciones de alto valor, se debe implementar una traza de auditoría robusta con controles de integridad que impidan su modificación o eliminación
+           Para transacciones de alto valor, se debe implementar una traza de auditoría robusta con controles de integridad que impidan su modificación o eliminación
           </li>
           
         </ul>
       </section>
 
-      <section id="Falsificacion">
+      <section id="Falsificacion" className="container py-5">
         <h2>10. Falsificación de solicitudes del lado del servidor </h2>
         <h3>¿Qué es?</h3>
         <p>
@@ -293,7 +296,13 @@ function Owasp() {
         </ul>
       </section>
 
-      <section>
+      
+    
+      <section  className="container py-5">
+        <Plan />
+      </section>
+
+      <section id="Glosario" className="container py-5">
         <h2>Glosario</h2>
         <ul>
           <li>
@@ -322,8 +331,10 @@ function Owasp() {
           </li>
         </ul>
       </section>
-    
-      
+
+      <footer>
+            <p> &copy; 2025,CARLAPEREZ</p>
+            </footer>
 
     </div>
   );

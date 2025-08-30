@@ -1,10 +1,3 @@
-/* Navbar estilizado */
-.custom-navbar {
-  background: linear-gradient(90deg, #0d1117, #1f2937);
-  padding: 0.8rem 2rem; 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
 
 /* Contenedor del enlace de retroceso */
 .back-link {
@@ -23,24 +16,28 @@
 /* Hover bonito */
 .back-link a:hover {
   color: #00d8ff;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(90, 108, 225, 0.93);
   transform: scale(1.15);
 }
 
-.navbar {
-  background-color: #343a40;
+.navbar-no {
+  
   color: white;
   padding: 0.5rem 1rem;
+  background:linear-gradient(to right, #022778, #008de5); 
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
+
 
 .container {
   padding-top: 70px; /* altura de la navbar fija */
+  
 }
 
 
@@ -48,6 +45,7 @@
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
+  
 }
 
 

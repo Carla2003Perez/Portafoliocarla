@@ -1,15 +1,12 @@
 /* Navbar general */
-.navbar {
-  background-color: #343a40;
-  color: white;
-  padding: 0.5rem 1rem;
-}
+
 
 /* Contenedor flex */
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background:linear-gradient(to right, #022778, #008de5); 
 }
 
 /* Marca */
@@ -20,16 +17,18 @@
 
 /* Dropdown */
 .dropdown-container {
-  position: relative;
   display: inline-block;
+  
+
 }
 
 .dropdown-toggle {
-  background: #343a40;
+  background: #403434;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  
 }
 
 .dropdown-toggle:hover {
@@ -50,8 +49,8 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #343a40;
-  border: 1px solid #555;
+  background-color: #a3190a;
+  border: 1px solid #d62323;
   min-width: 220px;
   list-style: none;
 }
@@ -71,5 +70,5 @@
 }
 
 .dropdown-menu li button:hover {
-  background-color: #495057;
+  background-color: #a84b61;
 }
