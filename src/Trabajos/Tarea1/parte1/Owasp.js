@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './owasp.css';
-import { Link} from 'react-router-dom'; 
 import Navowasp from "../navowasp";
 import Plan from "../parte2/planpruebas";
 
@@ -10,23 +9,17 @@ function Owasp() {
   return (
   
   <div className="owasp-container">
+    <Navowasp />
    <section className="bg-light py-5">
-    <nav className="navbar-no  fixed-top px-7">
-      
-        <p className="back-link"> 
-          <Link to="/"><i class="bi bi-arrow-left"></i></Link>
-        </p>
-    </nav>
   
-    
       <div className="container">
         <h1>OWASP TOP 10 DE RIESGOS DE SEGURIDAD</h1>
-      </div>
+      </div>     
+       
 
     </section>
-      
-    <Navowasp />
      
+    
 
 
       {/* 1 */}

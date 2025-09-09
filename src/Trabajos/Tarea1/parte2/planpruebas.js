@@ -1,14 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
 function Plan() {
   return (
   
   <div className="owasp-container">
    <section id="Plan" className="container py-4">
-    <h1>Segunda parte</h1>
+    
+      <section className="bg-light py-5">
+  
+      
+        <h1>Segunda parte </h1>
+         
+       
+
+    </section>
     <h2>¿Qué son los Planes de Prueba?</h2>
         
         <p>

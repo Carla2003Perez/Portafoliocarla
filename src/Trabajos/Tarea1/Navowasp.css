@@ -1,0 +1,122 @@
+/* contenedor general */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #0b2d5f;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  padding-left: 5px; /* deja espacio para sidebar */
+}
+
+/* botón volver centrado */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.back-button:hover {
+  color: #d81b60;
+}
+
+/* sidebar */
+.nav-left {
+  width: 260px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100vh;
+  background-color: #10418a;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  color: #fff;
+  overflow-y: auto;
+  
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+}
+
+/* botones principales del menú */
+.nav-left .menu-button {
+ 
+  background: #10418a;
+  border: none;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* aquí le das el largo que quieras */
+ 
+  display: block;
+  
+    
+}
+
+.nav-left .menu-button:hover {
+  background: #c2185b;
+}
+
+/* submenu (acordeón) */
+.menu-item:first-child {
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.nav-left .submenu {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: max-height 0.4s ease, margin-top 0.4s ease;
+}
+
+.nav-left .submenu.show {
+  max-height: 900px;
+  margin-top: 10px; /* más espacio debajo del botón padre */
+}
+
+/* botones del submenu */
+.nav-left .submenu button {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px 2px; /* buen espaciado */
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nav-left .submenu button:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* contenido principal */
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './css/trabajos.css'
-import Owas from './image/owas.webp'
+import Owas from './image/owasp.jfif'
 import Prueba from './image/tipos-prueba.webp'
 function Trabajos() {
 
