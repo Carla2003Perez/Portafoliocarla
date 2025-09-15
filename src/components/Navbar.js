@@ -4,7 +4,7 @@ import './css/inicio.css';
 import carla from "./image/carla.jpg"
 
 function Navbar() {
-  const [activeLink, setActiveLink] = useState("inicio"); // Estado del link activo
+  const [activeLink, setActiveLink] = useState("inicio"); 
 
   const handleClick = (link) => {
     setActiveLink(link);
@@ -53,7 +53,15 @@ function Navbar() {
                 <li className="list-group-item"><strong>Email:</strong> surianoc79@gmail.com</li>
                 <li className="list-group-item"><strong>Teléfono:</strong> 4223-8102</li>
           </ul>
-          <button className="btn btn-theme-outline">Download CV</button>
+          <button 
+          className="btn btn-theme-outline"
+          onClick={() => {
+             const link = document.createElement("a");
+             link.href = "/CV.pdf"; 
+             link.download = "Carla_Perez.pdf";
+             link.click();
+  }}
+          >Download CV</button>
         </div>
       </div>
     
