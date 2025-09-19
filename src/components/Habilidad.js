@@ -5,9 +5,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 function Habilidad() {
   const skills = [
     { label: "HTML & CSS", value: 60 },
-    { label: "MySQL", value: 70 },
-    { label: "JavaScript", value: 50 },
-    { label: "C#", value: 90 },
+    { label: "Postgresql", value: 50 },
+    { label: "JavaScript", value: 40 },
+    { label: "C#", value: 30 },
   ];
 
   const [animated, setAnimated] = useState(false);

@@ -60,7 +60,7 @@ function Navbar() {
              link.href = "/CV.pdf"; 
              link.download = "Carla_Perez.pdf";
              link.click();
-  }}
+            }}
           >Download CV</button>
         </div>
       </div>

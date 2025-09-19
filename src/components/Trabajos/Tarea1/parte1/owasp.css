@@ -52,17 +52,24 @@
   padding-top: 70px;  /* espacio para navbar fijo */
 }
 
+.bg-light{
+  background-image: url("./top10.webp");
+    background-size:cover;
+}
 /* Ajuste de secciones */
 .container {
-  padding: 20px; /* espacio interno general */
+  padding: 20px; 
+   font-family: cursive;
+   
+}
+
+.owasp{
+  color: #fff;
 }
 
 /* Responsive: sidebar colapsa debajo del navbar en pantallas pequeñas */
 @media (max-width: 768px) {
-  .owasp-container {
-    margin-left: 0;  /* sidebar se puede ocultar o hacer hamburguesa */
-  }
-
+  
   .nav-left {
     width: 100%;
     position: relative;

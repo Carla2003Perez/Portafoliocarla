@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import pruebas from "./pruebas.png"
+import casos from "./casos.png"
 function Plan() {
   return (
   
-  <div className="owasp-container">
-   <section id="Plan" className="container py-4">
+  <div className="plan-container">
+   <section id="Plan" className="container py-5">
     
-      <section className="bg-light py-5">
+      <section className="py-5">
   
       
         <h1>Segunda parte </h1>
@@ -33,7 +34,27 @@ function Plan() {
         
     </section> 
 
-    <section id="Plan" className="container py-5">
+    <section id="Ejemplos">
+        <h1>Ejemplos</h1>
+        <h2>plan de pruebas</h2>
+         <div className="img-place wow fadeInUp">
+            <img src={pruebas}alt="Foto perfil" className="img-fluid rounded mb-3" />
+          </div>
+        <p>
+          
+        </p>
+
+    <h2> Casos de Prueba</h2>
+        
+        <p>
+           <div className="img-place wow fadeInUp">
+            <img src={casos}alt="Foto perfil" className="img-fluid rounded mb-3" />
+          </div>
+        </p>
+        
+    </section> 
+
+    <section id="Casos" className="container py-5">
       <h2>Plan de Pruebas para un Catálogo</h2>
 
       {/* Objetivo */}

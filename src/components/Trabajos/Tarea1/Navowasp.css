@@ -10,6 +10,8 @@
   align-items: center;
   z-index: 100;
   padding-left: 5px; /* deja espacio para sidebar */
+  
+    
 }
 
 /* botón volver centrado */
@@ -75,7 +77,7 @@
 }
 
 .nav-left .menu-button:hover {
-  background: #c2185b;
+  background: #188cc2;
 }
 
 /* submenu (acordeón) */
@@ -112,7 +114,7 @@
 }
 
 .nav-left .submenu button:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* contenido principal */

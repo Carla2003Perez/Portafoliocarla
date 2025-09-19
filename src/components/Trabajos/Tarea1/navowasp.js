@@ -66,8 +66,8 @@ function Navowasp() {
             </button>
             <ul className={`submenu ${openMenu === "segunda" ? "show" : ""}`}>
               <button onClick={() => handleScroll("Plan")}>¿Qué son los Planes de Prueba?</button>
+               <button onClick={() => handleScroll("Ejemplos")}>Ejemplos</button>
               <button onClick={() => handleScroll("Casos")}>¿Qué son los Casos de Prueba?</button>
-              <button onClick={() => handleScroll("Ejemplos")}>Ejemplos</button>
               <button onClick={() => handleScroll("Catalogo")}>Plan de Pruebas para un Catálogo</button>
               <button onClick={() => handleScroll("Glosario")}>Glosario</button>
             </ul>

@@ -13,13 +13,11 @@ function Owasp() {
    <section className="bg-light py-5">
   
       <div className="container">
-        <h1>OWASP TOP 10 DE RIESGOS DE SEGURIDAD</h1>
-      </div>     
-       
+        <h1 className="owasp">OWASP TOP 10 DE RIESGOS DE SEGURIDAD</h1>
+      </div>       
 
     </section>
-     
-    
+
 
 
       {/* 1 */}
