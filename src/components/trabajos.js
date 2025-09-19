@@ -8,13 +8,13 @@ function Trabajos() {
   const trabajos = [
     { id: 1, titulo: "Guía de Owasp", img: OwasImag, link: "/Primer" },
     { id: 2, titulo: "Tipos de pruebas", img: PruebaImag, link: "/Prueba" },
-    { id: 3, titulo: "Pruebas", img: "https://via.placeholder.com/300x200", link: "/tercer" },
+   
   ];
 
   const Pdf = [
     { id: 1, file: "/pdfs/Tarea 3 Guia OWASP.pdf" },
     { id: 2, file: "/pdfs/Tarea 4 tipos de prueba.pdf" },
-    { id: 3, file: "/PruebasGenerales.pdf" },
+
   ];
 
   const [paginaActual, setPaginaActual] = useState(1);
