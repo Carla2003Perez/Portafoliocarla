@@ -43,7 +43,7 @@ function Navbar() {
         <div className="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 className="fw-light">Carla Renee Perez suriano</h1>
          
-          <p className="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form but the majority have suffered alteration in some</p>
+         
           <ul className="theme-list">
             <li className="list-group-item"><strong>Nombre:</strong> Carla Reneé Pérez Suriano</li>
                 <li className="list-group-item"><strong>Edad:</strong> 21</li>
