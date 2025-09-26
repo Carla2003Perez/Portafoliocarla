@@ -35,6 +35,7 @@ function Navowasp() {
       <div className="nav-left ">
         <ul className="navbar-menu ">
           {/* Primera Parte */}
+          <h1>Owasp</h1>
           <li className={`menu-item ${openMenu === "primera" ? "open" : ""}`}>
             <button
               className="menu-button active-part"

@@ -12,35 +12,55 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-md fixed-top px-4">
-        <a className="navbar-brand fw-bold" href="#inicio">Mi Portafolio</a>
+  <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top px-4">
+    {/* Brand */}
+    <a className="navbar-brand fw-bold" href="#inicio">
+      Mi Portafolio
+    </a>
 
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav gap-3">
-            {["inicio", "servicios", "habilidades", "trabajos", "glosario"].map((link) => (
-              <li className="nav-item" key={link}>
-                <a
-                  href={`#${link}`}
-                  className={`nav-link text-white ${activeLink === link ? "active-link" : ""}`}
-                  onClick={() => handleClick(link)}
-                >
-                  {link.charAt(0).toUpperCase() + link.slice(1)}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
+    {/* Botón hamburguesa */}
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+
+    {/* Menú colapsable */}
+    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul className="navbar-nav gap-3">
+        {["inicio", "Servicios", "habilidades", "trabajos"].map((link) => (
+          <li className="nav-item" key={link}>
+            <a
+              href={`#${link}`}
+              className={`nav-link text-white ${
+                activeLink === link ? "active-link" : ""
+              }`}
+              onClick={() => handleClick(link)}
+            >
+              {link.charAt(0).toUpperCase() + link.slice(1)}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+
 
     <section id="inicio" className="inicio">
          <div className="container py-5 ">
       <div className="row">
         <div className="col-lg-4 py-3">
           <div className="img-place wow fadeInUp">
-            <img src={carla}alt="Foto perfil" className="img-fluid rounded mb-3" />
+            <img src={carla}alt="Foto perfil" />
           </div>
         </div>
-        <div className="col-lg-6 offset-lg-1 wow fadeInRight">
+        <div className="col-lg-6 offset-lg-1 ">
           <h1 className="fw-light">Carla Renee Perez suriano</h1>
          
          

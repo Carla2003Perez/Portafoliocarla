@@ -37,12 +37,10 @@ function Plan() {
     <section id="Ejemplos">
         <h1>Ejemplos</h1>
         <h2>plan de pruebas</h2>
-         <div className="img-place wow fadeInUp">
+         <div className="img-place wow">
             <img src={pruebas}alt="Foto perfil" className="img-fluid rounded mb-3" />
           </div>
-        <p>
-          
-        </p>
+      
 
     <h2> Casos de Prueba</h2>
         

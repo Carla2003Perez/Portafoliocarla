@@ -8,7 +8,7 @@ function Inicio() {
   return (
     <div>
       {/* SECCION ESTUDIOS + HABILIDADES */}
-      <section className="container py-5">
+      <section id="Servicios"className="container py-5">
         <div className="row">
           {/* Columna izquierda: Estudios */}
           <div className="col-lg-6">
