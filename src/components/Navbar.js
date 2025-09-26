@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div>
   <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top px-4">
-    {/* Brand */}
+  
     <a className="navbar-brand fw-bold" href="#inicio">
       Mi Portafolio
     </a>
